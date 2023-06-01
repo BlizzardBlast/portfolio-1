@@ -1,0 +1,72 @@
+.center-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+  flex-direction: column;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pg {
+  font-size: 4rem;
+  color: white;
+  z-index: 2;
+}
+
+.biggest-text {
+  font-size: 15rem;
+  color: black;
+  text-shadow: 0.1rem 0.1rem 0.2rem rgb(255, 50, 50),
+    -0.1rem -0.1rem 0.2rem #9d3bff;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.7;
+  top: 11rem;
+}
+
+.front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+  min-width: 100svw;
+  flex-direction: column;
+  padding-top: 7rem;
+}
+
+.button {
+  border: 1px solid rgb(255, 50, 50);
+  color: rgb(255, 50, 50);
+  padding: 0.7rem 1.4rem;
+  font-size: 1.5em;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition-duration: 0.2s ease-in;
+  z-index: 5;
+  position: relative;
+  outline: 0;
+  overflow: hidden;
+  background: none;
+  border-radius: 3rem;
+}
+
+.button:hover {
+  color: black;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  background: rgb(255, 50, 50);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -99;
+  transition: top 0.09s ease-in;
+}
+
+.button:hover:before {
+  top: 0;
+}
